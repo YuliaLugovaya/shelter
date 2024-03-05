@@ -1,0 +1,188 @@
+.footer {
+  background: url("../../assets/images/noise_transparent@2x.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  height: 100%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5.6rem 0 5rem 0;
+  width: 36.5%;
+}
+
+.footer__contacts_maps {
+  width: 36.5%;
+  padding-left: 87px;
+}
+
+.footer__title {
+  width: 28rem;
+  margin: 0 0 10px 0;
+  color: #FFFFFF;
+}
+
+.footer__item {
+  display: flex;
+  width: 302px;
+}
+
+.footer__text {
+  width: 26rem;
+  padding: 1.5rem 0 1.8rem 2rem;
+  margin: 0;
+  letter-spacing: 0.06em;
+  font-family: "Georgia", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 115%;
+  color: #F1CDB3;
+  transition: 0.5s;
+}
+
+.footer__text:hover {
+  color: #FFFFFF;
+}
+
+.footer__image {
+  width: 27%;
+}
+
+.footer__image_picture {
+  margin: 4rem 0 0 2.5rem;
+}
+
+/*media*/
+
+@media screen and (max-width: 1170px) {
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 34px;
+  }
+
+  .footer__image_picture {
+    margin: 0;
+  }
+
+  .footer__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__contacts {
+    margin: 3rem 0 5rem 0;
+    width: 36.5%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .footer__contacts_maps {
+    padding-left: 93px;
+  }
+
+  .footer__title {
+    margin: 0 0 11px 0;
+  }
+
+  .footer__text {
+    padding: 2rem 0 1.9rem 2rem;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+
+  .footer__info {
+    flex-direction: column;
+    align-self: center;
+  }
+
+  .footer__contacts {
+    width: 100%;
+  }
+
+  .footer__contacts_maps {
+    padding: 0;
+  }
+
+  .footer__image_picture {
+    max-width: 100%;
+  }
+
+  .footer__info {
+    padding-left: 0;
+  }
+
+  .footer__title {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .footer__title {
+    padding-left: 12px;
+  }
+
+  .footer__text {
+    width: auto;
+    padding: 3.1rem 0 2rem 2rem;
+  }
+
+  .footer__text_boston {
+    padding: 2.9rem 0 2rem 2rem;
+  }
+
+  .footer__text_london {
+    padding: 2.2rem 0 2.7rem 2rem;
+  }
+
+  .footer__contacts {
+    margin: 3rem 0 0 0;
+  }
+
+  .footer__contacts_maps {
+    margin: 2.3rem 0 2rem 0;
+  }
+
+  .footer__image_picture {
+    max-width: 87%;
+  }
+
+  .footer__item_questions {
+    justify-content: center;
+  }
+
+  .footer__image_questions {
+    margin-top: 10px;
+  }
+
+  .footer__image_maps {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .footer__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #4C4C4C;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+[class*="__container"] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+[class*="__title"] {
+  font-family: "Georgia", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+}
+
+[class*="__button"] {
+  padding: 15px 45px;
+  font-family: "Georgia", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  color: #292929;
+  background: #FAFAFA;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+[class*="__button"]:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+
+  [class*="__title"] {
+    font-size: 2.5rem;
+  }
+}

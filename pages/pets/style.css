@@ -1,0 +1,188 @@
+@import "../../assets/styles/fonts.css";
+@import "../../assets/styles/global.css";
+@import "../../assets/styles/header.css";
+@import "../../assets/styles/footer.css";
+@import "../../assets/styles/cards.css";
+@import "../../assets/styles/popup.css";
+
+
+/*header*/
+
+.header__title {
+  color: #545454;
+}
+
+.header__subtitle {
+  color: #292929;
+}
+
+.header__link {
+  color: #545454;
+}
+
+.header__link_selected {
+  color: #292929;
+}
+
+.header__link:hover {
+  color: #292929;
+}
+
+.header__icon {
+  display: none;
+}
+
+/*our friends*/
+
+.our-friends__card {
+  margin: 0 0 28px 0;
+}
+
+.our-friends__card._disabled {
+  pointer-events: none;
+}
+
+.pets-our-friends__pagination {
+  display: flex;
+  margin: 30px 0 101px 0;
+}
+
+.pets-our-friends__btn {
+  width: 52px;
+  height: 52px;
+  margin: 0 10px;
+  font-family: "Georgia", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #292929;
+  background: #F6F6F6;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+
+.pets-our-friends__btn:hover {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
+}
+
+.pets-our-friends__btn.disabled {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  cursor: default;
+}
+
+.pets-our-friends__btn.disabled:hover {
+  background: #F6F6F6;
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  cursor: default;
+}
+
+.pets-our-friends__number.active {
+  width: 52px;
+  height: 52px;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 100px;
+  background-color: #F1CDB3;
+}
+
+.pets-our-friends__number {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+}
+
+@media screen and (min-width: 2500px) {
+  .our-friends {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1235px) {
+  .our-friends__cards {
+    justify-content: center;
+  }
+
+  .our-friends__card {
+    margin: 0 20px 28px 20px;
+  }
+
+  .our-friends__title {
+    margin: 80px 0 30px 0;
+  }
+
+  .pets-our-friends__pagination {
+    margin: 39px 0 75px 0;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .header__icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 3rem;
+    height: 2.2rem;
+    cursor: pointer;
+  }
+
+  .header__icon span,
+  .header__icon::before,
+  .header__icon::after {
+    background-color: #000000;
+  }
+
+  .header__nav {
+    background-color: #FAFAFA;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  .our-friends__cards {
+    max-height: 1365px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .pets-our-friends__pagination {
+    margin: 43px 0 41px 0;
+  }
+
+  .pets-our-friends__btn {
+    margin: 0 5px;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  .our-friends__container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .pets-our-friends__number {
+    margin: 0 5px;
+  }
+
+  .our-friends__title {
+    margin: 40px 0 42px 0;
+  }
+
+  .our-friends__card {
+    margin: 0 20px 30px 20px;
+}
+
+}
+

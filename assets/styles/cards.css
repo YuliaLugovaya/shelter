@@ -1,0 +1,65 @@
+.our-friends {
+  background-color: #F6F6F6;
+}
+
+.our-friends__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-friends__title {
+  margin: 80px 0 60px 0;
+  text-align: center;
+}
+
+.our-friends__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main-our-friends__arrows-mobile {
+  display: none;
+}
+
+.our-friends__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 47.5px;
+  margin-bottom: 30px;
+  background: #FAFAFA;
+  border-radius: 9px;
+}
+
+.our-friends__button-card {
+  margin: 0 0 30px 0;
+}
+
+.our-friends__card:hover {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.our-friends__card:hover .our-friends__button-card {
+  background: #FDDCC4;
+  border: 2px solid #FDDCC4;
+  cursor: pointer;
+}
+
+.our-friends__card-image {
+  border-radius: 9px 9px 0 0;
+}
+
+.our-friends__text {
+  margin: 30px 0;
+  font-family: "Georgia", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  line-height: 2.3rem;
+  color: #545454;
+}
